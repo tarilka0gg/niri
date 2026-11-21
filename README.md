@@ -1,3 +1,9 @@
+> **about this fork**
+>
+> personal fork of [niri](https://github.com/niri-wm/niri). work happens on branches, `main` follows upstream.
+>
+> - [`remove-dead-code`](https://github.com/tarilka0gg/niri/tree/remove-dead-code): removes methods that have no callers left. found by folding `lib.rs` into `main.rs` so rustc's dead-code lint also sees `pub` items, then dropping only what's unused in both the normal and the test build (screencast-only, test-only and smithay state holders kept). check, clippy and tests pass.
+
 <h1 align="center"><img alt="niri" src="https://github.com/user-attachments/assets/07d05cd0-d5dc-4a28-9a35-51bae8f119a0"></h1>
 <p align="center">A scrollable-tiling Wayland compositor.</p>
 <p align="center">
